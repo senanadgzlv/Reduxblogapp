@@ -13,13 +13,13 @@ const Approuter = () => {
 
      <BrowserRouter>
     <Nav/>
-    <div className='container' >
+    <div className="" >
     <Route path="/" exact component={HomePage}></Route>
     <Route path="/blog" exact component={BlogListPage}></Route>
     <Route path="/blog/:id" component={Blogdetails}></Route>
     <Route path="/addblog" component={Addblogform} ></Route>
     <Route path="/dashboard" component={Dashboard} ></Route>
-    <Route path="/edit" component={Editblogpage} ></Route>
+    <Route path="/edit/:id" component={Editblogpage} ></Route>
 
     </div>
 
